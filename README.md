@@ -370,6 +370,15 @@ This project leverages `wiremock` to test the code to some extent. Note this wil
 
 #### Local Testing
 
+#### Install Pytest and pytest-asyncio
+```
+pip install -U pytest
+
+pip install pytest-asyncio
+```
+
+#### Notes
+
 Note that the tests setup leverages the [`local_env_vars.py`](tests/local_env_vars.py) file. The values for those environment variables need to be set based on the following:
 
 * `TPLINK_KASA_USERNAME`: `kasa_docker` - This must have parity with the V2 login `body` specified in [`tests/wiremock/mappings/v2_login_request.json`](tests/wiremock/mappings/v2_login_request.json)
