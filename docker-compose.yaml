@@ -1,8 +1,6 @@
-version: "3.9"
 services:
-
     mock-tplink-api:
-      image: rodolpheche/wiremock
+      image: wiremock/wiremock:2.35.1-1
       restart: always
       ports:
         # HTTP
